@@ -1,0 +1,728 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+:root {
+    --font-color-header: #7B68EE;
+    --background-color: #ffd300;
+    --darker-background-color: #ff9200;
+    --products-container: #A3E048;
+    --banner-text:#333;
+}
+
+.header-shipping {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24px;
+    background-color: var(--darker-background-color);
+    color:var(--font-color-header);
+    font-weight: 300;
+    letter-spacing: 0.07rem;
+}
+.header-shipping h5 {
+    font-size: 0.60rem;
+}
+
+.header-menu {
+    background-color:var(--background-color);
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.menu-list a {
+    text-decoration: none;
+    color: var(--font-color-header);
+}
+.menu-items {
+    list-style: none;
+}
+.menu-items .logo {
+    width: 2.6rem;
+}
+.menu-items img {
+   width: 1.875rem;
+}
+
+.header-banner {
+    height: 70vh;
+    background-image: url(/assets/media/banner1-happywomanwithglasses.jpg);
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-position: 100% 15%;
+}
+.banner-container {
+    float: inline-end;
+    padding-top: 130px;
+    margin-right: 250px;
+    width: 260px;
+}
+.banner-title {
+    font-weight: 400;
+    text-shadow: 0.00rem 0.09rem 0.10rem #333;
+    padding-bottom: 1.875rem;
+    width: 25rem;
+}
+.banner-text {
+    font-weight: 300;
+    text-align: center;
+    color: var(--banner-text);
+}
+
+
+.brands-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px 30px;
+}
+.brands-img {
+    width: 150px;
+    padding-right: 20px;
+}
+
+
+#coveted-product {
+    text-align: center;
+}
+.coveted-title {
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+.coveted-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.coveted-products {
+    width: 214px;
+    height: 275px;
+    background-color: var(--products-container);
+    border-radius: 25px;
+}
+.product-information h4{
+    font-weight: 400;
+}
+.product-information p{
+    font-weight: 300;
+}
+.product-information h5{
+    font-weight: 300;
+}
+
+
+.contact-banner {
+    margin-top: 35px;
+    background-image: url(/assets/media/woman-being-praised-by-coworkers-feeling-awkward-shy-hearing-congratulations-with-received-award.jpg);
+    background-position: right;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    height: 50vh;
+    padding: 15px;
+    background-position: 100% 20%;
+}
+.contact-container {
+    float: inline-start;
+    padding-top: 5.125rem;
+    margin-left: 15.625rem;
+    width: 16.25rem;
+}
+.contact-banner-title {
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-shadow: 0.00rem 0.06rem 0.07rem #333;
+    padding-bottom: 0.875rem;
+    width: 25rem;
+}
+.contact-banner-text {
+    width: 600px;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: var(--banner-text);
+}
+.buy-btn {
+    width: 150px;
+    background-color:var(--background-color);
+    padding: 15px;    
+    border: 0;
+    border-radius: 25px;
+}
+.buy-btn:hover {
+    text-decoration: underline;
+}
+
+
+.lenses-container {
+    display: grid;
+    grid-template-columns: repeat(3,150px);
+    grid-template-rows:repeat(3,150px);
+    gap: 150px;
+    margin-left: 145px;
+}
+.lenses-item {
+    background-color: var(--products-container);
+    width: 150px;
+    height: 250px;
+    text-align: center;
+    border-radius: 25px;
+}
+.lenses-img {
+    width: 150px;
+}
+
+
+.optix-container {
+    float: right;
+    margin-top: 150px;
+    margin-right: 100px;
+}
+.optix-banner {
+    width: 300px;
+}
+
+
+#us-section {
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.us-container {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    grid-row: inherit;
+}
+.us-img {
+    width: 300px;
+    height: 212px;
+}
+.us-info {
+    background-color: var(--background-color);
+    text-align: center;
+    padding: 30px;
+}
+.us-title {
+    padding-bottom: 15px;
+}
+.us-text {
+    font-weight: 200;
+}
+
+
+footer {
+    margin-top: 50px;
+    background-color: var(--darker-background-color);
+    position: relative;
+}
+.location-container {
+    position: absolute; /* Altera o posicionamento para absoluto */
+    left: 10%; /* Posiciona no centro horizontal */
+    transform: translateX(-50%); /* Ajusta para centralização */
+    bottom: 50px; /* Ajusta a distância do fundo do footer conforme necessário */
+}
+.location {
+    width: 210px;
+    height: 90px;
+    background-color: #ccc;
+    text-align: center;
+}
+.info {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.info-title {
+    font-weight: 200;
+    text-align: end;
+}
+.info-container {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+.info-mark {
+    display: flex;
+    justify-content: flex-end;
+}
+.info-imgs {
+    width: 40px;
+    padding: 10px 0;
+}
+.credits {
+    display: flex;
+    gap: 200px;
+    padding-left: 10px;
+}
+.credits-text {
+    font-size: 0.855rem;
+}
+
+
+@media (max-width: 427px) and (min-width: 320px) {
+    header {
+        width: 100%;
+    }
+    .header-shipping {
+        height: 20px;
+    }
+    .header-shipping h5 {
+        font-size: 0.45rem;
+    }
+    .header-menu {
+        height: 50px;
+    }
+    .menu-list {
+        padding: 0; 
+    }
+    .menu-items {
+        font-size: 0.51rem;
+    }
+    .menu-items img {
+        width: 16px;
+    }
+
+
+    .header-banner {
+        height: 30vh;
+        background-position: 100% 10%;
+    }
+    .banner-container {
+        position: relative;
+        padding: 50px;
+        left: 304px;
+    }
+    .banner-title {
+        font-size: 0.55rem;
+        width: 160px;
+        text-shadow: 0.00rem 0.04rem 0.13rem #333;
+        padding-bottom: 25px;
+    }
+    .banner-title strong {
+        padding-left:55px;
+    }
+    .banner-text {
+        font-size: 0.50rem;
+        width: 150px;
+    }
+
+    .brands-img-container:first-child {
+        margin-left: -20px;
+    }
+    .brands-img {
+        width: 80px;
+        padding-right: 30px;
+    }
+
+    .coveted-products {
+        padding: 10px;
+        width: 90px;
+        height: 150px;
+    }
+
+
+    .contact-banner {
+        margin-top: 35px;
+        height: 20vh;
+    }
+    .contact-container {
+        margin: 0;
+        margin-top: -80px;
+    }
+    .contact-banner-title {
+        font-size: 0.55rem;
+        width: 160px;
+        text-shadow: 0.00rem 0.04rem 0.13rem #333;
+        padding-bottom: 8px;
+    }
+    .contact-banner-text {
+        font-size: 0.50rem;
+        width: 150px;
+        margin-bottom: 8px;
+    }
+    .buy-btn {
+        width: 100px;
+        padding: 8px;
+        font-size: 0.70rem;
+    }
+    .brands-container {
+        margin-bottom: 10px;
+    }
+
+
+    .optix-container {
+        margin: 0;
+    }
+    .optix-banner {
+        margin-top: 100px;
+        width: 100px;
+        margin-left: 100px;
+    }
+    .lenses-container {
+        margin-left: 10px;
+        grid-template-columns: repeat(2,5px);
+        grid-template-rows: repeat(2,40px);
+        gap: 100px;
+    }
+    .lenses-item {
+        padding: 10px;
+        width: 90px;
+        height: 125px;
+    }
+
+
+    #us-section {
+        margin-top: 120px;
+    }
+    .us-container {
+        grid-template-columns: repeat(2,150px);
+        grid-row: inherit;
+    }
+    .us-img {
+        width: 150px;
+        height: 150px;
+    }
+    .us-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        font-size: 0.55rem;
+    }
+    .us-text {
+        width: 120px;
+        line-height: 11px;
+    }
+
+
+    .location-container {
+        left: 25%;
+        top: 15%;
+    }
+    .location {
+        width: 150px;
+        height: 80px;
+    }
+    .info {
+        padding-right: 5px;
+    }
+    .info-imgs {
+        padding: 2px;
+    }
+    .info-title {
+        font-size: 0.88rem;
+    }
+    .info-imgs {
+        width: 30px;
+    }
+    .credits {
+        gap: 10px;
+        padding-left: 5px;
+    }
+    .credits-text {
+        font-size: 0.69rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .optix-banner {
+        position: relative;
+        right: 20px;
+        width: 125px;
+    }
+
+
+    .informations {
+        padding-right: 10px;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 426px) {
+    .banner-container {
+        left: 290px;
+    }
+    .brands-container {
+        margin-left: 0px;
+    }
+    .brands-img:last-child {
+        margin-right: -46px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .banner-container {
+        left: 280px;
+    }
+    
+
+    .optix-banner {
+        position: relative;
+        right: 15px;
+        top: 80px;
+        bottom: 20px;
+        width: 125px;
+        margin: 0;
+    }
+    .lenses-container {
+        margin-left: 20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .header-banner {
+        background-position: 80% 0%;
+        height: 50vh;
+    }
+    .banner-container {
+        position: relative;
+        top: 60px;
+        left: 160px;
+        padding-top: 0;
+    }
+    .banner-title strong {
+        padding-left: 120px;
+    }
+    .banner-text {
+        position: relative;
+        left: 20px;
+    }
+
+
+    .contact-container {
+        margin: 0;
+    }
+
+
+    .contact-container {
+        padding-top: 40px;
+    }
+    .contact-banner-text {
+        width: 400px;
+    }
+
+
+    .optix-container {
+        position: relative;
+        right: 10px;
+        top: 160px;
+        margin: 0;
+    }
+    .lenses-item {
+        width: 145px;
+    }
+    .optix-banner {
+        width: 225px;
+    }
+    .lenses-container {
+        margin-top: 20px;
+        margin-left: 10px;
+        grid-template-columns: repeat(3,80px);
+        grid-template-rows: repeat(3,180px);
+        gap: 100px;
+    }
+
+
+    #us-section {
+        margin-top: -150px;
+    }
+
+
+    .location-container {
+        left: 20%;
+        width: 250px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .header-banner {
+        height: 80vh;
+        background-position: 100% 20%;
+    }
+    .banner-container {
+        top: 40px;
+        left: 100px;
+    }
+
+    .contact-banner {
+        height: 40vh;
+    }
+    .contact-banner-text {
+        margin-bottom: 10px;
+    }
+    .contact-container {
+        padding-top: 20px;
+        padding-left: 30px;
+    }
+
+
+    .lenses-item {
+        width: 180px;
+    }
+    .lenses-container {
+        margin-top: 30px;
+        margin-left: 20px;
+        grid-template-columns: repeat(3,130px);
+        grid-template-rows: repeat(3,180px);
+        gap: 100px;
+    }
+    .optix-container {
+        right: 50px;
+        top: 200px;
+    }
+}
+
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .banner-container {
+        position: relative;
+        top: 20px;
+        left: 10px;
+    }
+    .banner-text {
+        width: 350px;
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3000px) {
+    .header-shipping {
+        height: 30px;
+    }
+    .header-shipping h5{
+        font-size: 1rem;
+    }
+
+
+    .header-menu {
+        height: 150px;
+    }
+    .menu-items a {
+        font-size: 1.8rem;
+    }
+    .menu-items img {
+        width: 50px;
+    }
+
+
+    .banner-container {
+        position: relative;
+        width: 600px;
+        top: 190px;
+    }
+    .banner-title {
+        font-size: 2.5rem;
+        width: 700px;
+    }
+    .banner-title strong {
+        padding-left: 250px;
+    }
+    .banner-text {
+        font-size: 1.6rem;
+    }
+
+
+    .brands-img {
+        width: 200px;
+    }
+
+    .coveted-title {
+        font-size: 2.8rem;
+        margin-bottom: 60px;
+    }
+    .coveted-products {
+        width: 350px;
+        height: 450px;
+    }
+
+
+    .contact-container {
+        padding-top: 170px;
+    }
+    .contact-banner-title {
+        font-size: 2.8rem;
+        width: 600px;
+        padding-bottom: 15px;
+    }
+    .contact-banner-text {
+        font-size: 1.6rem;
+        padding-bottom: 10px;
+    }
+    .buy-btn {
+        width: 350px;
+        padding: 30px;
+        font-size: 1.6rem;
+        border-radius: 30px;
+    }
+
+
+
+    .optix-banner {
+        width: 500px;
+    }
+    .lenses-container {
+        margin-top: 30px;
+        grid-template-columns: repeat(3, 350px);
+        grid-template-rows: repeat(3, 370px);
+    }
+    .lenses-item {
+        width: 325px;
+        height: 455px;
+    }
+    .lenses-brand {
+        font-size: 1.8rem;
+    }
+    .lenses-price {
+        font-size: 1.6rem;
+    }
+
+
+    .us-container {
+        margin-top: -270px;
+        grid-template-columns: repeat(2, 500px);
+    }
+    .us-img {
+        width: 500px;
+        height: 350px;
+    }
+    .us-info {
+        padding: 50px;
+    }
+    .us-title {
+        font-size: 2rem;
+    }
+    .us-text {
+        font-size: 1.6rem;
+    }
+
+
+    .info-title {
+        font-size: 2rem;
+    }
+    .info-imgs {
+        width: 60px;
+    }
+    .credits-text {
+        font-size: 1.3rem;
+    }
+    .location-container {
+        left: 13%;
+        bottom: 55px;
+    }
+    .location {
+        width: 380px;
+        height: 200px;
+    }
+} 

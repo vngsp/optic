@@ -1,0 +1,2 @@
+Adicionar no layout de celular para que ao clicar em "checkout" o "Order summary" apareça e scrolle ate ele.
+Diminuir tamanho do .bag-title,aside,order-summary.
