@@ -3,21 +3,14 @@
     box-sizing: border-box;
     font-family: "Ubuntu", sans-serif;
 }
-:root {
-    --font-color-header: #7B68EE;
-    --background-color: #ffd300;
-    --darker-background-color: #ff9200;
-    --products-container: #A3E048;
-}
-
 
 .bag-title {
     width: 1000px;
     position: relative;
     left: 75px;
-    font-size: 2.5rem;
+    font-size: 3.3rem;
     color: var(--background-color);
-    margin-top: 70px;
+    margin-top: 35px;
     margin-left: 75px;
     margin-bottom: 30px;
 }

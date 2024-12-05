@@ -1,17 +1,9 @@
-const url = 'rapidapi.com';
+// const menuitems = document.querySelectorAll('.menu-items');
 
-async function getAllItems() {
-    try {
-        const response = await fetch(url);
-        if(!response.ok) {
-            throw new error('Network response was not ok');
-        }
-        const data = await response.json();
-        console.log('Data:', data);
-    }
-    catch(error) {
-        console.error('There was a problem with a fetch operaton', error);
-    }
-}
-
-getAllItems();
+// menuitems.forEach((item) => {
+//     item.addEventListener('mouseover', () => {
+//         const newElement = document.createElement('div');
+//         newElement.textContent = 'Genérico';
+//         item.appendChild(newElement);
+//     })
+// })

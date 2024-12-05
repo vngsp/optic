@@ -3,19 +3,12 @@
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-:root {
-    --font-color-header: #7B68EE;
-    --background-color: #ffd300;
-    --darker-background-color: #ff9200;
-    --products-container: #A3E048;
-    --banner-text:#333;
-}
 
 .header-shipping {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 24px;
+    height: 4vh;
     background-color: var(--darker-background-color);
     color:var(--font-color-header);
     font-weight: 300;
@@ -27,7 +20,7 @@
 
 .header-menu {
     background-color:var(--background-color);
-    height: 5rem;
+    height: 12vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -49,7 +42,7 @@
     width: 2.6rem;
 }
 .menu-items img {
-   width: 1.875rem;
+   width: 2rem;
 }
 
 .header-banner {
@@ -225,10 +218,10 @@ footer {
     position: relative;
 }
 .location-container {
-    position: absolute; /* Altera o posicionamento para absoluto */
-    left: 10%; /* Posiciona no centro horizontal */
-    transform: translateX(-50%); /* Ajusta para centralização */
-    bottom: 50px; /* Ajusta a distância do fundo do footer conforme necessário */
+    position: absolute; 
+    left: 10%; 
+    transform: translateX(-50%); 
+    bottom: 50px;
 }
 .location {
     width: 210px;
@@ -278,19 +271,22 @@ footer {
         height: 20px;
     }
     .header-shipping h5 {
-        font-size: 0.45rem;
+        font-size: 0.42rem;
     }
     .header-menu {
-        height: 50px;
+        height: 60px;
     }
     .menu-list {
         padding: 0; 
     }
     .menu-items {
-        font-size: 0.51rem;
+        font-size: 0.56rem;
     }
     .menu-items img {
         width: 16px;
+    }
+    .menu-items .logo {
+        width: 20px;
     }
 
 
@@ -301,11 +297,12 @@ footer {
     .banner-container {
         position: relative;
         padding: 50px;
-        left: 304px;
+        left: 145px;
+        width: 100px;
     }
     .banner-title {
         font-size: 0.55rem;
-        width: 160px;
+        width: 150px;
         text-shadow: 0.00rem 0.04rem 0.13rem #333;
         padding-bottom: 25px;
     }
@@ -318,11 +315,15 @@ footer {
     }
 
     .brands-img-container:first-child {
-        margin-left: -20px;
+        margin-left: -50px;
     }
     .brands-img {
         width: 80px;
         padding-right: 30px;
+    }
+    .brands-container .brands-img-container:nth-child(4) .brands-img {
+        padding-right: 0;
+        width: 45px;
     }
 
     .coveted-products {
@@ -437,22 +438,15 @@ footer {
     }
 }
 
-@media (min-width: 375px) and (max-width: 424px) {
-    .optix-banner {
-        position: relative;
-        right: 20px;
-        width: 125px;
-    }
-
-
-    .informations {
-        padding-right: 10px;
+@media(min-width:320px) and (max-width:374px) {
+    .brands-img-container:first-child {
+        margin-left: -15px;
     }
 }
 
 @media (min-width: 375px) and (max-width: 426px) {
     .banner-container {
-        left: 290px;
+        left: 130px;
     }
     .brands-container {
         margin-left: 0px;
@@ -464,9 +458,23 @@ footer {
 
 @media (min-width: 425px) and (max-width: 767px) {
     .banner-container {
-        left: 280px;
+        left: 120px;
     }
-    
+    .menu-items .logo {
+        width: 22px;
+    }
+    .menu-items img {
+        width: 20px;
+    }
+
+    .brands-container {
+        width: 100%;
+        justify-content: space-around;
+        padding: 0px 30px 0px 30px;
+    }
+    .brands-img-container:first-child {
+        margin-left: -50px;
+    }
 
     .optix-banner {
         position: relative;
@@ -478,6 +486,10 @@ footer {
     }
     .lenses-container {
         margin-left: 20px;
+    }
+
+    .contact-banner-text {
+        margin-bottom: 5px;
     }
 }
 
@@ -494,6 +506,9 @@ footer {
     }
     .banner-title strong {
         padding-left: 120px;
+    }
+    .banner-title {
+        width: 350px;
     }
     .banner-text {
         position: relative;
@@ -553,7 +568,7 @@ footer {
         background-position: 100% 20%;
     }
     .banner-container {
-        top: 40px;
+        top: 120px;
         left: 100px;
     }
 
@@ -599,7 +614,7 @@ footer {
 
 @media (min-width: 2560px) and (max-width: 3000px) {
     .header-shipping {
-        height: 30px;
+        height: 4vh;
     }
     .header-shipping h5{
         font-size: 1rem;
@@ -609,13 +624,15 @@ footer {
     .header-menu {
         height: 150px;
     }
-    .menu-items a {
-        font-size: 1.8rem;
+    .menu-items {
+        font-size: 1.5rem;
     }
     .menu-items img {
-        width: 50px;
+        width: 60px;
     }
-
+    .menu-items .logo {
+        width: 60px;
+    }
 
     .banner-container {
         position: relative;

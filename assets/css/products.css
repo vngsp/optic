@@ -1,0 +1,356 @@
+.container {
+    margin: 35px 150px 0px 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os elementos */
+}
+
+.titles-container {
+    display: flex;
+}
+.title {
+    font-size: 3.3rem;
+    font-weight: 700;
+    color: var(--background-color);
+}
+.position {
+    padding: 30px 0px 0px 5px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    color: var(--products-container);
+}
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    white-space: nowrap;
+}
+.search-container {
+    margin-top: 20px;
+    display: flex;
+}
+.search {
+    color: var(--products-container);
+    font-size: 1.3rem;
+}
+.search-icon {
+    width: 15px;
+    height: 2px;
+    background-color: var(--products-container);
+    margin: 13px 0px 0px 5px;
+}
+.search-icon:hover {
+    cursor: pointer;
+}
+.found strong {
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 1rem;
+}
+.found {
+    font-weight: 400;
+    font-size: 1rem;
+}
+.filter-by {
+    display: flex;
+}
+.filter-title {
+    font-weight: 500;
+    margin-right: 8px;
+    font-size: 1rem;
+}
+.dropdown-icon {
+    position: relative;
+    top: 2px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 100px 0px 115px;
+}
+.product-container {
+    text-align: center;
+    width: calc(33.333% - 20px);
+    margin-bottom: 10px;
+}
+.product-container:hover {
+    box-shadow: -1px -1px 5px rgba(166, 172, 176, 0.386);
+    cursor: pointer;
+}
+.product-img {
+    width: 320px;
+    height: 300px;
+}
+.product-name {
+    font-weight: 600;
+}
+.product-desc {
+    color: var(--banner-text);
+    font-weight: lighter;
+    margin: 10px 0px 10px 0px;
+}
+.product-price {
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+@media(min-width: 320px) and (max-width: 427px) {
+    .title {
+        font-size: 1.7rem;
+        margin-left: -135px;
+    }
+    .position {
+        font-size: 0.5rem;
+        white-space: nowrap;
+        padding: 15px 0px 0px 5px;    
+    }
+    .menu-items .logo {
+        width: 18px;
+    }
+    .menu-items img {
+        width: 18px;
+    }
+
+
+    .filters {
+        margin-left: -135px;
+    }
+    .search-container {
+        margin-top: -10px;
+        margin-bottom: 45px;
+    }
+    .search {
+        font-size: 0.85rem;
+        white-space: nowrap;
+    }
+    .search-icon {
+        width: 10px;
+        height: 2px;
+        margin: 7px 0px 0px 5px;
+    }
+    .found strong {
+        font-size: 0.68rem;
+    }
+    .found {
+        font-size: 0.68rem;
+        white-space: nowrap;
+        padding-right: 30px;
+        margin-left: -10px;
+    }
+    .filter-title {
+        padding-top: 2px;
+        font-size: 0.68rem;
+        white-space: nowrap;
+        margin-right: 5px;
+    }
+    .dropdown-icon {
+        top: 4px;
+        width: 8px;
+        height: 8px;
+    }
+
+    .products-container {
+        margin: 0;
+        flex-wrap: wrap;
+    }
+    .product-container {
+        width: 48%;
+    }
+    .product-img {
+        width: 155px;
+        height: 130px;
+    }
+    .product-name {
+        font-size: 0.85rem;
+    }
+    .product-desc {
+        font-size: 0.68rem;
+    }
+    .product-price {
+        font-size: 0.85rem;
+    }
+}
+
+@media (min-width: 375px) and (max-width: 424px) {
+    .menu-items {
+        font-size: 0.58rem;
+    }
+    .menu-items img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .title {
+        margin-left: -125px;
+    }
+    .search-container {
+        margin-top: -13px;
+    }
+    .filters {
+        margin-left: -125px;
+    }
+    .found {
+        padding-right: 55px;
+        margin-left: 10px;
+    }
+
+    .position {
+        font-size: 0.53rem;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767px) {
+    .menu-items {
+        font-size: 0.62rem;
+    }
+    .menu-items .logo {
+        width: 25px;
+    }
+    .menu-items img {
+        width: 20px;
+    }
+
+    .title {
+        margin-left: -120px;
+    }
+    .filters {
+        margin-left: -120px;
+    }
+    .found {
+        padding-right: 70px;
+        margin-left: 30px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .menu-items {
+        font-size: 0.90rem;
+    }
+    .menu-items img {
+        width: 30px;
+    }
+    .menu-items .logo {
+        width: 35px;
+    }
+
+    .title {
+        margin-left: -55px;
+    }
+    .search-container {
+        margin-top: -60px;
+    }
+    .filters {
+        margin-top: 30px;
+        margin-left: -55px;
+        white-space: nowrap;
+    }
+    .found {
+        padding-right: 140px;
+        margin-left: 80px;
+    }
+
+    .products-container {
+        margin: 30px 20px 30px 80px;
+        gap: 20px;
+    }
+    .product-img {
+        width: 180px;
+        height: 200px;
+    }
+}   
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .title {
+        margin-left: -30px;
+    }
+    .position {
+        padding: 35px 0px 0px 5px;
+    }
+
+    .filters {
+        margin-left: -30px;
+    }
+    .search-container {
+        margin-top: -10px;
+    }
+    .search {
+        margin-bottom: 30px;
+    }
+    .found {
+        padding-right: 240px;
+        margin-left: 190px;
+    }
+
+    .products-container {
+        margin: 30px 30px 30px 90px;
+    }
+}
+
+@media (min-width: 2560px) and (max-width: 3000px) {
+    .title {
+        margin-left: 110px;
+        font-size: 5rem;
+    }
+    .position {
+        font-size: 1.2rem;
+        padding-top: 55px;
+    }
+    .filters {
+        margin-left: 110px;
+    }
+    .search-container {
+        margin-top: -20px;
+    }
+    .search {
+        font-size: 1.7rem;
+        margin-bottom: 40px;
+    }
+    .search-icon {
+        margin: 16px 0px 0px 8px;
+        height: 3px;
+        width: 20px;
+    }
+    .found {
+        font-size: 1.6rem;
+    }
+    .found strong {
+        font-size: 1.6rem;
+    }
+    .filter-title {
+        font-size: 1.6rem;
+    }
+    .filter-by {
+        margin-right: 90px;
+    }
+    .dropdown-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .products-container {
+        margin: 50px 0px 0px 76px;
+        max-width: 98%;
+    }
+    .product-img {
+        width: 550px;
+        height: 530px;
+    }
+    .product-name {
+        font-size: 1.9rem;
+    }
+    .product-desc {
+        font-size: 1.6rem;
+    }
+    .product-price {
+        font-size: 1.9rem;
+    }
+}
