@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
 .container {
     margin: 35px 150px 0px 150px;
     display: flex;
@@ -29,7 +35,7 @@
     white-space: nowrap;
 }
 .search-container {
-    margin-top: 20px;
+    margin-top: -10px;
     display: flex;
 }
 .search {
@@ -81,6 +87,10 @@
     text-align: center;
     width: calc(33.333% - 20px);
     margin-bottom: 10px;
+}
+.product-container a {
+    text-decoration: none;
+    color: inherit;
 }
 .product-container:hover {
     box-shadow: -1px -1px 5px rgba(166, 172, 176, 0.386);
