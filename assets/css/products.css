@@ -243,13 +243,13 @@
 
 @media (min-width: 768px) and (max-width: 1023px) {
     .menu-items {
-        font-size: 0.90rem;
+        font-size: 1.1rem;
     }
     .menu-items img {
-        width: 30px;
+        width: 35px;
     }
     .menu-items .logo {
-        width: 35px;
+        width: 40px;
     }
 
     .title {
